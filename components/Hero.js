@@ -65,14 +65,14 @@ const Hero = () => {
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 6}}> 
           <AppButton>Contact</AppButton>
           <AppLink>
-            <a href="../public/Web_Software Developer.pdf" download>
+            <Link href="../public/Web_Software Developer.pdf" passHref>
               <Typography
                 paddingLeft={5}
                 sx={{cursor: 'pointer'}}
               >
                 Download CV
               </Typography>
-            </a>  
+            </Link>  
           </AppLink>
         </Box> 
     </HeroContainer>
