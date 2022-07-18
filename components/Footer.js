@@ -70,7 +70,11 @@ const Footer = () => {
             </Box>
           </Stack>
         </Grid>
-        <Grid item sx={{ backgroundColor: '#3485BA', marginLeft: 20, display: { 'xs': 'none', 'md': 'block'}}}>
+        <Grid item sx={{
+              backgroundColor: '#3485BA',
+              marginLeft: 20,
+              display: { 'xs': 'none', 'md': 'block'},
+            }}>
           <Image src={footerImage} />
         </Grid>
       </Grid>

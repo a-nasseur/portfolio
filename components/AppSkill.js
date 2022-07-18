@@ -11,6 +11,7 @@ const SkillContainer = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   marginRight: 56,
+  boxShadow: '4px 4px #A6D1E6'
   
 }));
 
