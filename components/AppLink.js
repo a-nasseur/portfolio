@@ -7,7 +7,6 @@ const CustomLink = styled(Box)(({ theme }) => ({
 }));
 
 const AppLink = ({ children, href }) => {
-  console.log(href)
   return (
     <CustomLink>
             {

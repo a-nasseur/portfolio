@@ -11,8 +11,8 @@ import AppLink from './AppLink'
 const Projects = ({ data }) => {
 
   return (
-    <React.Fragment id='projects'>
-    <AppHeading style={{textAlign: 'start', paddingLeft: '2px'}}>Latests<br/>Projects</AppHeading>
+    <div id='projects'>
+    <AppHeading  style={{textAlign: 'start', paddingLeft: '2px'}}>Latests<br/>Projects</AppHeading>
         <Grid container marginTop={7} spacing={2} >
           {data.map(project =>  
             <Grid item xs={12} md={6} lg={4} key={project.id}>
@@ -35,7 +35,7 @@ const Projects = ({ data }) => {
             </Grid>
           )}
         </Grid>
-    </React.Fragment>
+    </div>
   )
 }
 

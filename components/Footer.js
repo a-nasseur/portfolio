@@ -25,14 +25,15 @@ const FooterContainer = styled(Container)(({ theme }) => ({
     borderTopLeftRadius: 44,
     borderTopRightRadius: 44,
     [theme.breakpoints.down('md')]: {
-      width: '95%'
+      width: '95%',
+      padding: 40
     }
 }));
 
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <Grid container>
         <Grid item xs={12} md={6} lg={3}>
           <Stack spacing={5}>
@@ -63,7 +64,7 @@ const Footer = () => {
             >
               0555 826 487
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'space-around'}}>
+            <Box sx={{ display: 'flex'}}>
               <AppSocialIcon icon={twitterIcon} background='#fff' href={twitterLink}/>
               <AppSocialIcon icon={linkedinIcon} background='#0288D1' href={linkedInLink}/>
               <AppSocialIcon icon={githubIcon} background='#fff' href={githubLink}/>

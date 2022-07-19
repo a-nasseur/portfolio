@@ -7,18 +7,22 @@ const SkillContainer = styled(Box)(({ theme }) => ({
   height: 124,
   width: 124,
   borderRadius: 41,
+  marginBottom: 20,
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'space-evenly',
   alignItems: 'center',
-  marginRight: 56,
-  boxShadow: '4px 4px #A6D1E6'
-  
+  // marginRight: 56,
+  boxShadow: '4px 4px 4px #A6D1E6',
+  [theme.breakpoints.down('md')]: {
+
+  }
+
 }));
 
 const AppSkill = ({ icon, background}) => {
 
   return (
-    <>
+    <React.Fragment>
       {
         icon && 
 
@@ -27,7 +31,7 @@ const AppSkill = ({ icon, background}) => {
         </SkillContainer>
 
       }
-    </>
+    </React.Fragment>
 
   )
 }

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const IconContainer = styled(Box)(({ theme }) => ({
+    marginRight: 20,
     height: 65,
     width: 65,
     borderRadius: 18,

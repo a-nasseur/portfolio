@@ -1,14 +1,14 @@
 import { Box, Container, styled, Typography } from '@mui/material';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Link as Scroll} from 'react-scroll'
 
 
 import sticker from '../public/sticker.svg'
 import AppHeading from './AppHeading'
 import AppSubHeading from './AppSubHeading'
 import AppButton from './AppButton'
-
 
 
 const height = 184;
@@ -61,11 +61,13 @@ const Hero = () => {
           <Image src={sticker} alt='avatar image' />  
         </AvatarBox> 
         <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>  
-        <AppHeading>Desenvolvo <span style={{ color: '#0994D0'}}>ideias</span> e ajudo a construir um mundo melhor através do software.</AppHeading> 
+        <AppHeading>Developping your <span style={{ color: '#0994D0'}}>ideas</span> aiming to build a better world through applications and softwares.</AppHeading> 
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 6}}> 
-          <AppButton>Contact</AppButton>
+          <Scroll to='contact' spy={true} smooth={true} offset={50} duration={500}>
+            <AppButton>Contact</AppButton>
+          </Scroll>
           <AppLink>
-            <Link href="../public/Web_Software Developer.pdf" passHref>
+            <Link href="/">
               <Typography
                 paddingLeft={5}
                 sx={{cursor: 'pointer'}}

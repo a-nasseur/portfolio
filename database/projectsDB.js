@@ -26,12 +26,33 @@ export const projectsData = [
       ],
       background: '#0994D0',
       image: myPortfolio,
-      website: '#',
-      github: ''
+      website: '/',
+      github: 'https://github.com/a-nasseur/portfolio'
 
     },
     {
       id: 2,
+      title: 'Bevalg',
+      labels: [
+        {
+          id: 7,
+          title: 'Django',
+          background: '#0D4B32'
+        },
+        {
+          id: 8,
+          title: 'JS',
+          background: '#EC008C'
+        },
+        
+      ],
+      background: '#4C0A2A',
+      image: bevalg,
+      website: 'https://bevalg.com/fr/',
+      github: ''
+    },
+    {
+      id: 3,
       title: 'Labelpackdz',
       labels: [
         {
@@ -56,27 +77,6 @@ export const projectsData = [
       github: ''
 
     },
-    {
-      id: 3,
-      title: 'Bevalg',
-      labels: [
-        {
-          id: 7,
-          title: 'Django',
-          background: '#0D4B32'
-        },
-        {
-          id: 8,
-          title: 'JS',
-          background: '#EC008C'
-        },
-
-      ],
-      background: '#4C0A2A',
-      image: bevalg,
-      website: 'https://bevalg.com/fr/',
-      github: ''
-    },
-  
+    
   ]
   

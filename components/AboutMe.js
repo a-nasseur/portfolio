@@ -17,7 +17,7 @@ const ContentContainer = styled(Box)(({ theme }) => ({
 
 const AboutMe = () => {
   return (
-   <>
+   <div id="about">
     <Box sx={{backgroundImage: `url(${"../public/vector2.png"})`}}>
         <AppHeading style={{textAlign: 'start', paddingLeft: '2px'}}>About<br/>Me</AppHeading>
         <Image src={headingVector} />
@@ -53,7 +53,7 @@ const AboutMe = () => {
 
         <AppHeading style={{textAlign: 'start', paddingLeft: '2px'}}>Skills</AppHeading>
         
-        <Box sx={{ display: 'flex', flexWrap: 'wrap'}}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between'}}>
             {skills.map(skill => 
                 <React.Fragment key={skill.id}> 
                     <AppSkill icon={skill.icon} background={skill.background}/> 
@@ -62,7 +62,7 @@ const AboutMe = () => {
         </Box>
     </Stack>
     </Box>
-   </>
+   </div>
   )
 }
 
