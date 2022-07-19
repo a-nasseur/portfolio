@@ -22,7 +22,6 @@ const CustomToolbar = styled(Toolbar)(({ theme }) => ({
 
 
 const Navbar = () => {
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -75,17 +74,18 @@ const Navbar = () => {
       </Container>
       
       <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
-        <Fab sx={{ 
-              position: 'fixed',
-              bottom: 20, 
-              right: 20, 
-              backgroundColor: '#FFC36A',
-              '&:hover': { backgroundImage: 'linear-gradient(to right, #FFF278, 60%, #0994D0)'}
-            }}
-            size='small'
-          >
-          <ExpandLessIcon />
-        </Fab>
+          <Fab sx={{ 
+                position: 'fixed',
+                bottom: 20, 
+                right: 20, 
+                backgroundColor: '#000',
+                color: '#fff',
+                '&:hover': { backgroundColor: '#0994D0'}
+              }}
+              size='medium'
+            >
+            <ExpandLessIcon />
+          </Fab>
       </Link>
    </AppBar>     
 

@@ -8,6 +8,12 @@ const CustomButton = styled(Button)(({ theme }) => ({
     width: 155,
     height: 46,
     borderRadius: 32,
+    fontWeight: 'bold',
+    '&:hover': {
+      // backgroundImage: 'linear-gradient(to right, #40C4FF, 20%,  #189FFF)',
+      backgroundColor: '#0994D0',
+      color: '#fff',
+    }
   
   }))
 

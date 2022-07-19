@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Link as Scroll} from 'react-scroll'
 
-
 import sticker from '../public/sticker.svg'
 import AppHeading from './AppHeading'
 import AppSubHeading from './AppSubHeading'
@@ -14,7 +13,7 @@ import AppButton from './AppButton'
 const height = 184;
 
 const HeroContainer = styled(Container)(({ theme }) => ({
-  backgroundImage: 'linear-gradient(to right, #FFF278, 60%, #0994D0)',
+  backgroundImage: 'linear-gradient(to right, #FBED96, #ABECD6)',
   backgroundColor: '#EFFFFA',
   boxShadow: '5px 10px #EFFFFA',
   width: '75%',
@@ -53,8 +52,8 @@ const AppLink = styled(Box)(({ theme }) => ({
 
 
 
-
 const Hero = () => {
+
   return (
       <HeroContainer maxWidth='lg'>
         <AvatarBox>
@@ -67,14 +66,14 @@ const Hero = () => {
             <AppButton>Contact</AppButton>
           </Scroll>
           <AppLink>
-            <Link href="/">
+            <a href="/Web_Software_Developer.pdf" download>
               <Typography
                 paddingLeft={5}
                 sx={{cursor: 'pointer'}}
               >
                 Download CV
               </Typography>
-            </Link>  
+            </a>
           </AppLink>
         </Box> 
     </HeroContainer>
