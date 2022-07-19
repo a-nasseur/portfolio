@@ -20,11 +20,11 @@ export default function Home() {
 
       <Hero />
 
-      <Section maxWidth='lg'>
+      <Section maxWidth='lg' id="projects">
         <Projects data={projectsData} />
       </Section> 
 
-      <Section maxWidth='lg'>
+      <Section maxWidth='lg' id="about">
           <AboutMe />
       </Section>   
     </>

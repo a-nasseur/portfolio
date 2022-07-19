@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { AppBar, Box, Container, Fab, IconButton, styled, Toolbar, Typography } from '@mui/material'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 
@@ -60,20 +61,20 @@ const Navbar = () => {
             TransitionComponent={Fade}
             
           >
-            <Link to='projects' spy={true} smooth={true} offset={50} duration={500} > 
+            <ScrollLink to='projects' spy={true} smooth={true} offset={50} duration={500} > 
                 <MenuItem  sx={{ color: '#F49E0A'}} onClick={handleClose}>Projects</MenuItem>
-            </Link>
-            <Link to='about' spy={true} smooth={true} offset={50} duration={500}>
+            </ScrollLink>
+            <ScrollLink to='about' spy={true} smooth={true} offset={50} duration={500}>
                 <MenuItem sx={{ color: '#6BCFFA'}} onClick={handleClose}>About Me</MenuItem>
-            </Link>
-            <Link to='contact' spy={true} smooth={true} offset={50} duration={500}>
+            </ScrollLink>
+            <ScrollLink to='contact' spy={true} smooth={true} offset={50} duration={500}>
               <MenuItem sx={{ color: '#5ADAAD'}} onClick={handleClose}>Contact</MenuItem>
-            </Link>
+            </ScrollLink>
           </Menu>
         </CustomToolbar>
       </Container>
       
-      <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
+      <Link href='/' scroll={true}>
           <Fab sx={{ 
                 position: 'fixed',
                 bottom: 20, 

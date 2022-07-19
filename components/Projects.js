@@ -11,7 +11,7 @@ import AppLink from './AppLink'
 const Projects = ({ data }) => {
 
   return (
-    <div id='projects'>
+    <div>
     <AppHeading  style={{textAlign: 'start', paddingLeft: '2px'}}>Latests<br/>Projects</AppHeading>
         <Grid container marginTop={7} spacing={2} >
           {data.map(project =>  

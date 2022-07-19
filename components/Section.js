@@ -10,9 +10,9 @@ const SectionContainer = styled(Container)(({ theme }) => ({
   
   }));
 
-const Section = ({ children, style }) => {
+const Section = ({ children, style, id }) => {
   return (
-    <SectionContainer style={style}>
+    <SectionContainer style={style} id={id}>
         {children}
     </SectionContainer>
   )
