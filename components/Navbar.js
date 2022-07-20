@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { AppBar, Box, Container, Fab, IconButton, styled, Toolbar, Typography } from '@mui/material'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -74,7 +73,7 @@ const Navbar = () => {
         </CustomToolbar>
       </Container>
       
-      <Link href='/' scroll={true}>
+      <ScrollLink to='/' spy={true} smooth={true} offset={50} duration={500}>
           <Fab sx={{ 
                 position: 'fixed',
                 bottom: 20, 
@@ -87,7 +86,7 @@ const Navbar = () => {
             >
             <ExpandLessIcon />
           </Fab>
-      </Link>
+      </ScrollLink>
    </AppBar>     
 
    

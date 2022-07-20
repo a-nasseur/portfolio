@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" type="image/x-icon" href="/logo.svg" />
       </Head>
-      <body>
+      <body id='/'>
         <Main />
         <NextScript />
       </body>

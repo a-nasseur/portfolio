@@ -33,15 +33,17 @@ const AboutMe = () => {
                         paddingX={4}
                         
                     >
-                        Tenho 20 anos, estou em transição de carreira, vindo da área administrativa onde 
-                        desenvolvi experiência com gestão de pessoas, gestão de empresas e negociação com cliente.
-                        Tenho 20 anos, estou em transição de carreira, vindo da área administrativa onde 
-                        desenvolvi experiência com gestão de pessoas, gestão de empresas e negociação com cliente.
-                        Tenho 20 anos, estou em transição de carreira, vindo da área administrativa onde 
-                        desenvolvi experiência com gestão de pessoas, gestão de empresas e negociação com cliente.
+                        My name is Abdelhak, i am passionate about web application developement, i shifted my career
+                        from aviation where i acted as operations coordination staff, and later on as aircraft maintenance
+                        ground mecanic, to web developement.
+                        I have been trained primarly as data analyst being selected to particpate to the one million arab coders program,
+                        certifed few months later from the great online school Udacity.<br/> 
+                        I started lean towards web development after i had various experiences including building 
+                        gps communication servers, network scripting with python and more..., as web development is what i am 
+                        most passionate about. 
                         <br/><br/>
 
-                        Hoje construo aplicações fullstack!
+                        Focusing on completing my FullStack path !
 
                     </Typography>
                 </ContentContainer>

@@ -60,7 +60,7 @@ const Hero = () => {
           <Image src={sticker} alt='avatar image' />  
         </AvatarBox> 
         <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>  
-        <AppHeading>Developping your <span style={{ color: '#0994D0'}}>ideas</span> aiming to build a better world through applications and softwares.</AppHeading> 
+        <AppHeading>Developping your <span style={{ color: '#0994D0'}}>ideas</span> building a better world through applications and softwares.</AppHeading> 
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 6}}> 
           <Scroll to='contact' spy={true} smooth={true} offset={50} duration={500}>
             <AppButton>Contact</AppButton>
