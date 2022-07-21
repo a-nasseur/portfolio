@@ -46,7 +46,7 @@ const AboutMe = () => {
                         ground mecanic, to web developement.
                         I have been trained primarly as data analyst being selected to particpate to the one million arab coders program,
                         certifed few months later from the great online school Udacity.<br/> 
-                        I started lean towards web development after i had various experiences including building 
+                        I started to lean towards web development after i had various experiences including building 
                         gps communication servers, network scripting with python and more..., as web development is what i am 
                         most passionate about. 
                         <br/><br/>
