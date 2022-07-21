@@ -18,9 +18,17 @@ const ContentContainer = styled(Box)(({ theme }) => ({
 const AboutMe = () => {
   return (
    <div>
-    <Box sx={{backgroundImage: `url(${"../public/vector2.png"})`}}>
-        <AppHeading style={{textAlign: 'start', paddingLeft: '2px'}}>About<br/>Me</AppHeading>
-        <Image src={headingVector} />
+    <Box>
+        <AppHeading style={{
+            textAlign: 'start', 
+            paddingLeft: '2px' , 
+            backgroundImage: 'url("/vector2.png")', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundPosition: 'left bottom',
+        }}
+    >
+            About<br/>Me
+        </AppHeading>
     </Box>
     <Box sx={{display: 'flex' }}>
     <Stack spacing={10}>
