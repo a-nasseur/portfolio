@@ -13,9 +13,6 @@ const SkillContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   // marginRight: 56,
   boxShadow: '4px 4px 4px #A6D1E6',
-  [theme.breakpoints.down('md')]: {
-
-  }
 
 }));
 
