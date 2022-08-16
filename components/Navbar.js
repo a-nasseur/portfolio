@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { Link as ScrollLink } from 'react-scroll';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { Fade as Hamburger } from 'hamburger-react'
 
 
 import logo from '../public/logo.svg'
@@ -31,7 +32,6 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
-
   return (
     
     <AppBar id='home' color="transparent" elevation={0} position="static">
@@ -46,20 +46,18 @@ const Navbar = () => {
               My Portfolio
             </Typography>
           </Box>
-          <IconButton onClick={handleClick} >
-            <Image src={menu} /> 
-          </IconButton>
-          <Menu
-            id="fade-menu"
-            MenuListProps={{
-              'aria-labelledby': 'fade-button',
-            }}
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            TransitionComponent={Fade}
-            
-          >
+            <Image src={menu} onClick={handleClick} style={{ cursor: 'pointer'}} /> 
+            <Menu
+              id="fade-menu"
+              MenuListProps={{
+                'aria-labelledby': 'fade-button',
+              }}
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              TransitionComponent={Fade}
+              
+            >
             <ScrollLink to='projects' spy={true} smooth={true} offset={50} duration={500} > 
                 <MenuItem  sx={{ color: '#F49E0A'}} onClick={handleClose}>Projects</MenuItem>
             </ScrollLink>

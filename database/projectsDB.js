@@ -1,6 +1,8 @@
 import labelpack from '../public/labelpackdz.png'
 import bevalg from '../public/bevalg.png'
 import myPortfolio from '../public/portfolio.png'
+import eladabi from '../public/eladabi.png'
+
 
 
 export const projectsData = [
@@ -75,6 +77,32 @@ export const projectsData = [
       image: labelpack,
       website: 'http://labelpackdz.com/',
       github: ''
+
+    },
+    {
+      id: 4,
+      title: 'El Adabi',
+      labels: [
+        {
+          id: 7,
+          title: 'React',
+          background: '#8BB7F0'
+        },
+        {
+          id: 8,
+          title: 'JS',
+          background: '#EC008C'
+        },
+        {
+          id: 9,
+          title: 'Django',
+          background: '#0D4B32'
+        },
+      ],
+      background: '#FFBA9D',
+      image: eladabi,
+      website: 'https://eladabi-minimalist.vercel.app/',
+      github: 'https://github.com/a-nasseur/eladabi_minimalist'
 
     },
     

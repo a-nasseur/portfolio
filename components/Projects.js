@@ -15,7 +15,7 @@ const Projects = ({ data }) => {
     <AppHeading  style={{textAlign: 'start', paddingLeft: '2px'}}>Latests<br/>Projects</AppHeading>
         <Grid container marginTop={7} spacing={2} >
           {data.map(project =>  
-            <Grid item xs={12} md={6} lg={4} key={project.id}>
+            <Grid item xs={12} md={6} lg={4} key={project.id} sx={{ marginBottom: '40px'}}>
               <Stack spacing={2}>
                 <Typography
                     variant='h4'

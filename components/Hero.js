@@ -1,12 +1,14 @@
 import { Box, Container, styled, Typography } from '@mui/material';
-import React, { useEffect } from 'react'
-import Image from 'next/image'
-import { Link as Scroll} from 'react-scroll'
+import React, { useEffect } from 'react';
+import Image from 'next/image';
+import { Link as Scroll} from 'react-scroll';
 
-import sticker from '../public/sticker.svg'
-import AppHeading from './AppHeading'
-import AppSubHeading from './AppSubHeading'
-import AppButton from './AppButton'
+
+
+import sticker from '../public/sticker.svg';
+import AppHeading from './AppHeading';
+import AppSubHeading from './AppSubHeading';
+import AppButton from './AppButton';
 
 
 const height = 184;
@@ -52,11 +54,20 @@ const AppLink = styled(Box)(({ theme }) => ({
 
 
 const Hero = () => {
+  const [viewPortWidth, setViewPortWiddth] = React.useState(false)
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      if(window.visualViewport.width < 600){
+        setViewPortWiddth(true)
+      } 
+    }
+  }, [])
 
   return (
       <HeroContainer maxWidth='lg'>
         <AvatarBox>
-          <Image src={sticker} alt='avatar image' />  
+          {viewPortWidth ? <Image src={sticker} alt='avatar image' width={70} /> : <Image src={sticker} alt='avatar image'/>  }
         </AvatarBox> 
         <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>  
         <AppHeading>Developping your <span style={{ color: '#0994D0', backgroundImage: `url("/vector1.svg")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom	'}}>ideas</span> building a better world through applications and softwares.</AppHeading> 
