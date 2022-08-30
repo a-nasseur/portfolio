@@ -76,7 +76,7 @@ const Hero = () => {
             <AppButton>Contact</AppButton>
           </Scroll>
           <AppLink>
-            <a href="/Web_Software_Developer.pdf" download>
+            <a href="/Web_Software Developer.pdf" download>
               <Typography
                 paddingLeft={5}
                 sx={{cursor: 'pointer'}}
