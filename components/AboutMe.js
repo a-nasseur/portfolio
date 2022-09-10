@@ -33,7 +33,7 @@ const AboutMe = () => {
     <Box sx={{display: 'flex' }}>
     <Stack spacing={10}>
         <Grid container spacing={6}>
-            <Grid item xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={6} lg={6} order={{ xs: 2}}>
                 <ContentContainer>
                     <Typography
                         variant='body1'
@@ -56,7 +56,7 @@ const AboutMe = () => {
                     </Typography>
                 </ContentContainer>
             </Grid>
-            <Grid item xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={6} lg={6} order={{ xs: 1, md: 2}}>
                 <Image src={aboutMe} />
             </Grid>
         </Grid>
