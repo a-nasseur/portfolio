@@ -1,4 +1,4 @@
-import { Box, Container, styled, Typography } from '@mui/material';
+import { Box, Container, Fade, styled, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { Link as Scroll} from 'react-scroll';
@@ -25,7 +25,7 @@ const HeroContainer = styled(Container)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   [theme.breakpoints.down('md')]: {
-    width: '95%'
+    width: '90%'
   }
 }));
 
@@ -39,7 +39,7 @@ const AvatarBox = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   marginTop: 66,
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     width: 100,
     height: 100,
   }
@@ -54,12 +54,12 @@ const AppLink = styled(Box)(({ theme }) => ({
 
 
 const Hero = () => {
-  const [viewPortWidth, setViewPortWiddth] = React.useState(false)
+  const [viewPortWidth, setViewPortWidth] = React.useState(false)
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       if(window.visualViewport.width < 600){
-        setViewPortWiddth(true)
+        setViewPortWidth(true)
       } 
     }
   }, [])
@@ -67,10 +67,10 @@ const Hero = () => {
   return (
       <HeroContainer maxWidth='lg'>
         <AvatarBox>
-          {viewPortWidth ? <Image src={sticker} alt='avatar image' width={70} /> : <Image src={sticker} alt='avatar image'/>  }
+          {viewPortWidth ? <Image src={sticker} alt='avatar image' width={70} /> : <Image src={sticker} alt='avatar image'/>}
         </AvatarBox> 
-        <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>  
-        <AppHeading>Developping your <span style={{ color: '#0994D0', backgroundImage: `url("/vector1.svg")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom	'}}>ideas</span> building a better world through applications and softwares.</AppHeading> 
+        <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>
+        <AppHeading>Developping your <Fade easing="1" in={true}><span style={{color: '#0994D0', backgroundImage: `url("/vector1.svg")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom	'}}>ideas</span></Fade> building a better world through applications and softwares.</AppHeading> 
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 6}}> 
           <Scroll to='contact' spy={true} smooth={true} offset={50} duration={500}>
             <AppButton>Contact</AppButton>
