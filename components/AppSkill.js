@@ -9,11 +9,16 @@ const SkillContainer = styled(Box)(({ theme }) => ({
   borderRadius: 41,
   marginBottom: 20,
   display: 'flex',
-  justifyContent: 'space-evenly',
+  justifyContent: 'center',
   alignItems: 'center',
-  // marginRight: 56,
-  boxShadow: '4px 4px 4px #A6D1E6',
-
+  marginRight: 30,
+  transition: 'all 0.4s ease',
+  '&:hover': {
+    boxShadow: '10px 10px 10px  #A6D1E6',
+  },
+  [theme.breakpoints.down('md')]: {
+    marginRight: 0
+  }
 }));
 
 const AppSkill = ({ icon, background}) => {
