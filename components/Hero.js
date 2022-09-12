@@ -1,4 +1,4 @@
-import { Box, Container, Fade, styled, Typography } from '@mui/material';
+import { Box, Container,  styled, Typography, Zoom } from '@mui/material';
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { Link as Scroll} from 'react-scroll';
@@ -70,7 +70,7 @@ const Hero = () => {
           {viewPortWidth ? <Image src={sticker} alt='avatar image' width={70} /> : <Image src={sticker} alt='avatar image'/>}
         </AvatarBox> 
         <AppSubHeading>Hi my name is Abdelhak</AppSubHeading>
-        <AppHeading>Developping your <Fade easing="1" in={true}><span style={{color: '#0994D0', backgroundImage: `url("/vector1.svg")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom	'}}>ideas</span></Fade> building a better world through applications and softwares.</AppHeading> 
+        <AppHeading>Developping your <Zoom style={{ transitionDelay: '5000ms' }} in={true}><span style={{color: '#0994D0', backgroundImage: `url("/vector1.svg")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom	'}}>ideas</span></Zoom> building a better world through applications and softwares.</AppHeading> 
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 6}}> 
           <Scroll to='contact' spy={true} smooth={true} offset={50} duration={500}>
             <AppButton>Contact</AppButton>
